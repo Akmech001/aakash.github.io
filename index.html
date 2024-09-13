@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>About Section</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        .about-section {
+            background-color: #f8f9fa; /* Light grey background */
+            padding: 40px 0; /* Padding around the section */
+        }
+        .about-image {
+            max-width: 100%; /* Responsive image width */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 50%; /* Circular image */
+            margin-bottom: 20px; /* Space below the image */
+        }
+        .about-text {
+            font-size: 1.2rem; /* Larger text size */
+        }
+        .bg-pink {
+    background-color: #ff69b4; /* Pink background for buttons */
+}
+/* Skills Section Styling */
+#skills .card {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+#skills .card:hover {
+  transform: scale(1.05);
+}
+body {
+    padding-top: 90px; /* Add this line */
+}
+#skills .card-img-top {
+  width: 100%;
+  height: 300px; /* Fixed height for consistent image display */
+  object-fit: cover; /* Ensures the image covers the area without stretching */
+}
+
+#skills .btn-outline-secondary {
+  color: #6c757d; /* Bootstrap's secondary color */
+}
+
+#skills h2 {
+  color: #343a40; /* Dark grey color for heading */
+}
+
+.bg-dark {
+    background-color: #333; /* Dark background for the section */
+}
+
+.text-white {
+    color: #fff; /* White text color for contrast */
+}
+
+.btn img {
+    width: 30px; /* Set the size of the icons */
+    height: 30px; /* Maintain aspect ratio */
+}
+
+/* Bootstrap icons need to be included if not already in your project */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css');
+
+/* Enable tooltips */
+$(function () {
+    $('[data-bs-toggle="tooltip"]').tooltip()
+});
+
+    </style>
+</head>
+<body>
+    <section class="about-section text-center">
+        <section id="about" class="container my-5"></section>
+        <div class="container">
+            <h1>About</h1>
+            <img src="images/about/1.jpg" alt="About Image" class="about-image">
+            <div class="about-text">
+                <p>Passionate and enthusiastic aspiring Data Scientist with a strong foundation in data analysis and machine learning. Skilled in interpreting data and building predictive models to drive strategic decisions. Committed to continuous learning and eager to contribute to projects utlizing data for impactful outcomes.</p>
+            </div>
+        </div><!-- Projects Section -->
+        <section id="projects" class="container my-5">
+          <h2 class="text-center mb-4">Projects</h2>
+          <div class="row">
+            <!-- Project 1 -->
+            <div class="col-md-4">
+              <div class="card">
+                <img src="images/projects/1.png" class="card-img-top" alt="Project 1">
+                <div class="card-body">
+                  <h5 class="card-title">Hand-Wriiten-Digits-Classification-using-Neural-Network </h5>
+                  <p class="card-text">This project demonstrates the classification of handwritten digits (from the MNIST dataset) using two approaches: Artificial Neural Networks (ANN) and Convolutional Neural Networks (CNN). The project aims to compare the performance of these two methods in terms of accuracy and effectiveness for digit classification.</p>
+
+                  <a href="https://github.com/Akmech001/Hand-Wriiten-Digits-Classification-using-Neural-Network" class="btn btn-secondary" target="_blank">Source Code</a>
+                </div>
+              </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="col-md-4">
+              <div class="card">
+                <img src="images/projects/2.jpeg" class="card-img-top" alt="Project 2">
+                <div class="card-body">
+                  <h5 class="card-title">Movie Recommender System</h5>
+                  <p class="card-text">This project aims to create a movie recommender system using machine learning techniques. The system recommends movies based on their similarity to a given movie title. The project includes data preprocessing, feature extraction, and deployment using Streamlit.</p>
+
+                  <a href="https://github.com/Akmech001/Movie-Recommender-System" class="btn btn-secondary">Source Code</a>
+                </div>
+              </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="col-md-4">
+              <div class="card">
+                <img src="images/projects/3.jpeg" class="card-img-top" alt="Project 3">
+                <div class="card-body">
+                  <h5 class="card-title"> Customer-Churn-Prediction-using-ANN</h5>
+                  <p class="card-text">This project demonstrates the application of Artificial Neural Networks (ANN) to predict customer churn based on a dataset from a telecom company. The analysis focuses on identifying whether customers will churn using both Artificial Neural Networks (ANN) and Convolutional Neural Networks (CNN) and compares their performance.</p>
+
+                  <a href="https://github.com/Akmech001/Customer-Churn-Prediction-using-ANN" class="btn btn-secondary">Source Code</a>
+                </div>
+              </div>
+            </div>
+ 
+            <!-- Project 4 -->
+            <div class="col-md-4">
+                <div class="card">
+                  <img src="images/projects/4.jpeg" class="card-img-top" alt="Project 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Credit Card Fraud Detection</h5>
+                    <p class="card-text">This project aims to detect fraudulent credit card transactions using various machine learning models. The dataset used is highly imbalanced, so techniques like under-sampling were employed to balance the dataset. Multiple models were trained, and the best-performing model was selected and saved for deployment.</p>
+
+                    <a href="https://github.com/Akmech001/Credit-Card-Fraud-Detection" class="btn btn-secondary">Source Code</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Project 5 -->
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="images/projects/5.png" class="card-img-top" alt="Project 2">
+                  <div class="card-body">
+                    <h5 class="card-title">HR Analytics Dashboard</h5>
+                    <p class="card-text">This project involves analyzing HR attrition data using Tableau. The goal is to uncover insights regarding employee attrition, satisfaction, and demographic trends. The dashboard visualizes key metrics and trends to aid in understanding and addressing employee turnover.</p>
+
+                    <a href="https://github.com/Akmech001/HR-Attrition-Data-Analysis" class="btn btn-secondary">Source Code</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Project 6 -->
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="images/projects/6.png" class="card-img-top" alt="Project 3">
+                  <div class="card-body">
+                    <h5 class="card-title">Pizza Sales Data</h5>
+                    <p class="card-text">This Project contains SQL queries and a Tableau dashboard used to analyze pizza sales data. The analysis covers various key performance indicators (KPIs) and trends in the sales data.</p>
+
+                    <a href="https://github.com/Akmech001/Pizza-Data-Analysis--SQL-Tableau" class="btn btn-secondary">Source Code</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </section>
+        
+    </section>
+</body>
+</html>
+
+<!-- Skills Section -->
+<section id="skills" class="container my-5">
+    <h2 class="text-center mb-4">Skills</h2>
+    <div class="row">
+      <!-- Skill 1: Python -->
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="images/skills/1.png" class="card-img-top" alt="Python">
+          <div class="card-body">
+            <h5 class="card-title">Python</h5>
+            <p class="card-text">Expertise in data manipulation using NumPy and pandas, and advanced machine learning techniques with Scikit-learn. Proficient in implementing NLP and deep learning models using TensorFlow and Keras. Demonstrated ability in developing predictive models and solving complex data problems.</p>
+
+          </div>
+        </div>
+      </div>
+      <!-- Skill 2: Data Visualization -->
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="images/skills/2.png" class="card-img-top" alt="Data Visualization">
+          <div class="card-body">
+            <h5 class="card-title">Data Visualization</h5>
+            <p class="card-text">Strong ability to create insightful and compelling visual representations using Power BI, Tableau, and Excel Dashboards. Demonstrates expertise in transforming complex data sets into clear, actionable insights through effective charts, graphs, and interactive dashboards.</p>
+
+          </div>
+        </div>
+      </div>
+      <!-- Skill 3: SQL -->
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="images/skills/3.png" class="card-img-top" alt="SQL">
+          <div class="card-body">
+            <h5 class="card-title">SQL</h5>
+            <p class="card-text">With a solid understanding of writing and optimizing complex queries. Capable of managing large datasets, performing advanced data manipulations, and ensuring efficient data retrieval to support informed decision-making.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Skill 4: Data Storytelling -->
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="images/skills/4.png" class="card-img-top" alt="Data Storytelling">
+          <div class="card-body">
+            <h5 class="card-title">Data Storytelling</h5>
+            <p class="card-text">Adept at converting complex data into engaging narratives that highlight key insights and trends. Utilizes visual and textual elements to craft compelling stories that effectively communicate data-driven findings and support strategic decisions.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .contact-section {
+            background-color: #000; /* Black background for contrast */
+            color: #fff; /* White text for readability */
+            text-align: center; /* Center align text */
+            padding: 50px 0; /* Padding for the section */
+        }
+        .contact-section h1 {
+            margin-bottom: 40px; /* Spacing below the title */
+        }
+        .contact-icons {
+            display: flex;
+            justify-content: center; /* Center align the icons */
+            gap: 20px; /* Space between icons */
+        }
+        .contact-icon {
+            width: 60px; /* Icon size */
+            height: 60px; /* Icon size */
+            border-radius: 50%; /* Circle shape */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ff69b4; /* Icon background color */
+        }
+        .contact-icon img {
+            width: 50%; /* Relative size to the button */
+            height: auto;
+        }
+        
+        .contact-icon img {
+             width: 100%; /* Adjust the width as necessary */
+             height: auto; /* Maintain aspect ratio */
+             display: block; /* Remove any inline spacing */
+        }        
+    </style>
+</head>
+<body>
+    <section class="contact-section">
+        <section id="contact" class="contact-section text-center text-white bg-dark">
+        <h1>Contact Me</h1>
+        <p>aakashmech4001@gmail.com | +91 7305469574</p>
+        <div class="contact-icons">
+            <a href="https://www.linkedin.com/in/aakashp2001" class="contact-icon">
+                <img src="Images/icon/2.png" alt="LinkedIn">
+
+            <a href="https://github.com/Akmech001" class="contact-icon">
+                <img src="Images/icon/1.png" alt="GitHub">
+            </a>
+
+            <a href="https://public.tableau.com/app/profile/aakash.prabhakar/vizzes" class="contact-icon">
+                <img src="Images/icon/3.png" alt="Tableau">
+            </a>
+        </div>
+    </section>
+
+    <!-- Sticky Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  
+  <!-- Bootstrap JS and dependencies (jQuery and Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.5/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+  
